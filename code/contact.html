@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactez-nous</title>
+    <link rel="stylesheet" href="stylecontact.css"> 
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="entreprise.html">Entreprise</a></li>
+                <li><a href="realisations.html">Réalisations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Contactez-nous</h1>
+        <form action="#" method="post">
+
+            <label for="civilite">Civilité :</label>
+            <select id="civilite" name="civilite" required>
+                <option value="M.">M.</option>
+                <option value="Mme">Mme</option>
+                <option value="Mlle">Mlle</option>
+            </select>
+            
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
+            
+            <label for="prenom">Prénom :</label>
+            <input type="text" id="prenom" name="prenom" placeholder="Votre prénom" required>
+
+            <label for="adresse">Adresse postale :</label>
+            <input type="text" id="adresse" name="adresse" placeholder="Votre adresse postale" required>
+
+            <div class="checkbox-label">
+                <input type="checkbox" id="privacy" name="privacy" required>
+                <label for="privacy">J'accepte la <a href="politique.html">politique de confidentialité</a>.</label>
+            </div>
+
+            <button type="submit">Envoyer</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>© 2024 Notre Entreprise - Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>
